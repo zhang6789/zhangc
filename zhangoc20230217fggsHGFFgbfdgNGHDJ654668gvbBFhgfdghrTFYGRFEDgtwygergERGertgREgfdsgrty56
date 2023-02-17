@@ -60,7 +60,7 @@ proxy-groups:
       - Proxies
       - DIRECT
     use:
-#      - jichang1_wagong
+#     - jichang1_wagong
       - jichang2_aws
       - jichang3_txy_xjp
       
@@ -8852,7 +8852,7 @@ rules:
  - IP-CIDR6,2620:10c:7000::/44,Netflix,no-resolve
  - IP-CIDR6,2a00:86c0::/32,Netflix,no-resolve
  - IP-CIDR6,2a03:5640::/32,Netflix,no-resolve
- - DOMAIN-SUFFIX,openai.com,美国线路
+ - DOMAIN-SUFFIX,openai.com,ChatGPT
  - DOMAIN-SUFFIX,adobedtm.com,Disney Plus
  - DOMAIN-SUFFIX,bam.nr-date.net,Disney Plus
  - DOMAIN-SUFFIX,bamgrid.com,Disney Plus
