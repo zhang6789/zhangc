@@ -12,7 +12,7 @@ proxies:
 proxy-providers:
   jichang1_wagong:
     type: http
-    interval: 10800
+    interval: 3600
     path: "./proxy_provider/2023011801.yml"
     url: https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fjmssub.net%2Fmembers%2Fgetsub.php%3Fservice%3D639787%26id%3De7abbeaa-55c3-414c-8a80-79d88cabbb9b%26noss%3D1
     health-check:
