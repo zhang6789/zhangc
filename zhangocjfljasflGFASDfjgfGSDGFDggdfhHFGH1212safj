@@ -60,8 +60,8 @@ proxy-groups:
       - Proxies
       - DIRECT
     use:
-#     - jichang1_wagong
-      - jichang2_aws
+      - jichang1_wagong
+#     - jichang2_aws
       - jichang3_txy_xjp
       
   - name: Netflix
