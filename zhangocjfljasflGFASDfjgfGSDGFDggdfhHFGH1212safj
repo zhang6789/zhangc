@@ -9360,7 +9360,6 @@ rules:
  - DOMAIN-SUFFIX,mdex.com,Crypto
  - DOMAIN-SUFFIX,mdex.me,Crypto
  - DOMAIN-SUFFIX,1inch.io,Crypto
- - DOMAIN-SUFFIX,ip111.cn,Crypto
  - DOMAIN-SUFFIX,discord.com,Discord
  - DOMAIN-SUFFIX,discord.gg,Discord
  - DOMAIN-SUFFIX,discord.media,Discord
