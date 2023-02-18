@@ -9108,7 +9108,6 @@ rules:
  - IP-CIDR6,2001:b28:f23d::/48,Telegram,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,Telegram,no-resolve
  - IP-CIDR6,2a0a:f280::/32,Telegram,no-resolve
- - DOMAIN-SUFFIX,ip111.cn,Crypto
  - DOMAIN-SUFFIX,bitcointalk.org,Crypto
  - DOMAIN-SUFFIX,aex.com,Crypto
  - DOMAIN-SUFFIX,bibox.com,Crypto
@@ -9361,6 +9360,7 @@ rules:
  - DOMAIN-SUFFIX,mdex.com,Crypto
  - DOMAIN-SUFFIX,mdex.me,Crypto
  - DOMAIN-SUFFIX,1inch.io,Crypto
+ - DOMAIN-SUFFIX,ip111.cn,Crypto
  - DOMAIN-SUFFIX,discord.com,Discord
  - DOMAIN-SUFFIX,discord.gg,Discord
  - DOMAIN-SUFFIX,discord.media,Discord
