@@ -5,10 +5,6 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
- # - {name: JMS-639787@c90s3.jjvip8.com:12160, server: 199.19.108.97, port: 12160, type: vmess, uuid: e7abbeaa-55c3-414c-8a80-79d88cabbb9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
- # - {name: JMS-639787@c90s4.jjvip8.com:12160, server: 23.106.129.220, port: 12160, type: vmess, uuid: e7abbeaa-55c3-414c-8a80-79d88cabbb9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
- # - {name: JMS-639787@c90s5.jjvip8.com:12160, server: 104.193.9.181, port: 12160, type: vmess, uuid: e7abbeaa-55c3-414c-8a80-79d88cabbb9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
- # - {name: JMS-639787@c90s801.jjvip8.com:12160, server: 174.137.57.178, port: 12160, type: vmess, uuid: e7abbeaa-55c3-414c-8a80-79d88cabbb9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-providers:
   jichang1_wagong:
     type: http
@@ -19,16 +15,7 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  jichang2_aws:
-    type: http
-    path: "./proxy_provider/2023011802.yml"
-    url: https://api.dler.io/sub?target=clash&url=vmess%3A%2F%2Few0KICAidiI6ICIyIiwNCiAgInBzIjogInd3dy5hbGlzdHMudG9kYXkiLA0KICAiYWRkIjogInd3dy5hbGlzdHMudG9kYXkiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiZDQxNGQ1OTYtYWEyMy00YmIyLWIxYjYtM2E3NTIzYjYwZGQ1IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJ3d3cuYWxpc3RzLnRvZGF5IiwNCiAgInBhdGgiOiAiLzc1MmRjNTU5OGI%2FZWQ9MjA0OCIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiDQp9%7C
-#    interval: 10800
-#    health-check:
-#      enable: true
-#      url: http://www.gstatic.com/generate_204
-#      interval: 3600
-  jichang3_txy_xjp:
+  jichang2_txy:
     type: http
     path: "./proxy_provider/2023011803.yml"
     url: https://api.dler.io/sub?target=clash&url=vmess%3A%2F%2Few0KICAidiI6ICIyIiwNCiAgInBzIjogInd3dy50b3BnYW1lLnRvZGF5IiwNCiAgImFkZCI6ICJ3d3cudG9wZ2FtZS50b2RheSIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICJiNzcyYWI2NS1mMjNkLTQzZjUtYmMxNC0xMDczZmFiZmZhYTgiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInd3dy50b3BnYW1lLnRvZGF5IiwNCiAgInBhdGgiOiAiLzkzMzg3MmE2Y2Q%2FZWQ9MjA0OCIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiDQp9
@@ -60,9 +47,9 @@ proxy-groups:
       - Proxies
       - DIRECT
     use:
+      - jichang2_txy
       - jichang1_wagong
-#     - jichang2_aws
-      - jichang3_txy_xjp
+
       
   - name: Netflix
     type: select
@@ -9121,6 +9108,7 @@ rules:
  - IP-CIDR6,2001:b28:f23d::/48,Telegram,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,Telegram,no-resolve
  - IP-CIDR6,2a0a:f280::/32,Telegram,no-resolve
+ - DOMAIN-SUFFIX,ip111.cn,Crypto
  - DOMAIN-SUFFIX,bitcointalk.org,Crypto
  - DOMAIN-SUFFIX,aex.com,Crypto
  - DOMAIN-SUFFIX,bibox.com,Crypto
