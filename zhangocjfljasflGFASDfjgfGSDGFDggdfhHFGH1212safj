@@ -18,7 +18,7 @@ proxy-providers:
   jichang2:
     type: http
     path: "./proxy_provider/jichang2tengxunyun.yml"
-    url: https://api.dler.io/sub?target=clash&url=vmess%3A%2F%2Few0KICAidiI6ICIyIiwNCiAgInBzIjogInd3dy5hbGlzdHMudG9kYXkiLA0KICAiYWRkIjogInd3dy5hbGlzdHMudG9kYXkiLA0KICAicG9ydCI6ICIxMjU4MCIsDQogICJpZCI6ICIzZTNhOWZiYS1lNWZmLTQ0MWUtOWEyNC02ZjQ5NzI1YTI1NzgiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi8xZWNjMTFlZTQ1P2VkPTIwNDgiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIg0KfQ%3D%3D
+    url: https://api.dler.io/sub?target=clash&url=vmess%3A%2F%2Few0KICAidiI6ICIyIiwNCiAgInBzIjogInRvcGdhbWVzLnRvZGF5IiwNCiAgImFkZCI6ICJ0b3BnYW1lcy50b2RheSIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICJjOThlZTFjMy01ZWEzLTRmYmYtYTQ1OC00YzgzOTMxNDlmMmEiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogInplcm8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi9yYXkiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIg0KfQ%3D%3D%7C
 #    interval: 10800
 #    health-check:
 #      enable: true
